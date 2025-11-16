@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Am I Eligible? - Blood Donation Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Blood Donation Hub</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="request-blood.html">Request Blood</a></li>
+                <li><a href="eligibility.html">Am I Eligible?</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="php/register.php">Register as Donor</a></li>
+                <li><a href="php/login.php">Donor Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="eligibility">
+        <h1>Am I Eligible to Donate Blood?</h1>
+        <p>Answer a few questions to check your eligibility.</p>
+        <form id="quiz">
+            <div class="question">
+                <label>Are you between 18 and 65 years old?</label>
+                <input type="radio" name="age" value="yes"> Yes
+                <input type="radio" name="age" value="no"> No
+            </div>
+            <div class="question">
+                <label>Have you donated blood in the last 56 days?</label>
+                <input type="radio" name="recent" value="no"> No
+                <input type="radio" name="recent" value="yes"> Yes
+            </div>
+            <div class="question">
+                <label>Have you traveled outside the country in the last 28 days?</label>
+                <input type="radio" name="travel" value="no"> No
+                <input type="radio" name="travel" value="yes"> Yes
+            </div>
+            <div class="question">
+                <label>Are you currently taking medications or have any medical conditions?</label>
+                <input type="radio" name="meds" value="no"> No
+                <input type="radio" name="meds" value="yes"> Yes
+            </div>
+            <button type="button" onclick="checkEligibility()">Check Eligibility</button>
+        </form>
+        <div id="result"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Blood Donation Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="js/quiz.js"></script>
+</body>
+</html>

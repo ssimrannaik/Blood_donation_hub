@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Blood Donation Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Blood Donation Hub</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="request-blood.html">Request Blood</a></li>
+                <li><a href="eligibility.html">Am I Eligible?</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="php/register.php">Register as Donor</a></li>
+                <li><a href="php/login.php">Donor Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact">
+        <h1>Contact Us</h1>
+        <form action="php/contact.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit" class="cta-button">Send</button>
+        </form>
+        <div class="details">
+            <p>Email: info@bloodhub.com</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Address: 123 Main St, City, State</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Blood Donation Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>

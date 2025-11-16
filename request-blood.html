@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Blood - Blood Donation Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Blood Donation Hub</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="request-blood.html">Request Blood</a></li>
+                <li><a href="eligibility.html">Am I Eligible?</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="php/register.php">Register as Donor</a></li>
+                <li><a href="php/login.php">Donor Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="request">
+        <h1>Request Blood</h1>
+        <p>Fill in your details and the blood type you need. We'll connect you with matching donors.</p>
+        <form action="php/request_blood.php" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Your Phone:</label>
+            <input type="text" id="phone" name="phone" required>
+            <label for="blood_type">Blood Type Needed:</label>
+            <select id="blood_type" name="blood_type" required>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+            </select>
+            <label for="location">Your Location (City/State):</label>
+            <input type="text" id="location" name="location">
+            <button type="submit" class="cta-button">Find Donors</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Blood Donation Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>
